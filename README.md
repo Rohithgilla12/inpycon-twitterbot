@@ -20,7 +20,7 @@ pip install django
 
 ### Creating twitter api credentials
 
-1. Goto the following [link] (https://apps.twitter.com/ "Twitter App").
+1. Goto the following [link](https://apps.twitter.com/ "Twitter App").
 2. Fill the necessary details like :
     * Name of the bot.
     * Website name.
