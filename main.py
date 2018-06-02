@@ -4,12 +4,10 @@ import tweepy #for twitter API
 import time   #for giving 15 seconds break between tweets
 from django.utils.encoding import smart_str
 
+
 # Twitter Access Tokens
 
-consumer_key = "fTalKjuU4FfrkmoWMmLf9zHAD"
-consumer_secret = "DOZ6GlHAoXw58m4OKqFIQge5LVBpFegKlZG4qZ4Iq4jyvX1dte"
-access_token = "999286008934879233-EnGV1EYEZsXpFL9wLKwRD2nAiD4fbLs"
-access_token_secret = "G1jXMFYrwAdR349DFWoeVMNC0cAkvWJDvtjUOqBEYzGMk"
+from config import *
 
 # Connecting to twitter service
 

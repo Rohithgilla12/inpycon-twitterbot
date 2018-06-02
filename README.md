@@ -10,17 +10,16 @@
     * time
     * django.utils.encoding
     
-### To install required modules use these commands
+### Installation
 
 ```bash
-pip install tweepy
-pip install django
-
+pip install requirements.txt  
 ```
 
 ### Creating twitter api credentials
 
-1. Goto the following [link](https://apps.twitter.com/ "Twitter App").
+1. Go to the following [link](https://apps.twitter.com/ "Twitter App").
+2. Click the create app button
 2. Fill the necessary details like :
     * Name of the bot.
     * Website name.
