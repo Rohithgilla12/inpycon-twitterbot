@@ -31,9 +31,10 @@ while True:
 
             try:
                 #tweet.retweet()
-                perfect = "RT @"+smart_str(tweet.author.screen_name)+" "+smart_str(tweet.text)
-                api.update_status(perfect)
-                print("Retweeted with reply ")
+                if(smart_str(tweet.author.screen_name)!="BotGills"):
+                    perfect = "RT @"+smart_str(tweet.author.screen_name)+" "+smart_str(tweet.text)
+                    api.update_status(perfect)
+                    print("Retweeted")
             except:
                 pass
     for tweet in tweepy.Cursor(api.search,q="#PyConIndia").items(10):
@@ -46,9 +47,10 @@ while True:
                 namesperson.append(tweet.user.name)
             try:
                 #tweet.retweet()
-                perfect = "RT @"+smart_str(tweet.author.screen_name)+" "+smart_str(tweet.text)
-                api.update_status(perfect)
-                print("Retweeted")
+                if(smart_str(tweet.author.screen_name)!="BotGills"):
+                    perfect = "RT @"+smart_str(tweet.author.screen_name)+" "+smart_str(tweet.text)
+                    api.update_status(perfect)
+                    print("Retweeted")
             except:
                 pass
     for tweet in tweepy.Cursor(api.search,q="@pyconindia").items(10):
@@ -61,9 +63,10 @@ while True:
                 namesperson.append(tweet.user.name)
             try:
                 #tweet.retweet()
-                perfect = "RT @"+smart_str(tweet.author.screen_name)+" "+smart_str(tweet.text)
-                api.update_status(perfect)
-                print("Retweeted")
+                if(smart_str(tweet.author.screen_name)!="BotGills"):
+                    perfect = "RT @"+smart_str(tweet.author.screen_name)+" "+smart_str(tweet.text)
+                    api.update_status(perfect)
+                    print("Retweeted")
             except:
                 pass
     for i in names:
