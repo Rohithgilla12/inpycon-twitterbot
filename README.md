@@ -47,4 +47,4 @@ heroku ps:scale worker=1
 heroku logs --tail
 ```
 
-
+[![HitCount](http://hits.dwyl.io/Rohithgilla12/PyCon-Twitter-Bot.svg)](http://hits.dwyl.io/Rohithgilla12/PyCon-Twitter-Bot)
