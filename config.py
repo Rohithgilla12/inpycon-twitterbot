@@ -4,4 +4,4 @@ access_token = "Your Access Token here"
 access_token_secret = "Your Access Secret here"
 volunteertwitterhandle = "Your Twitter handle"
 # add search terms of your choice
-searchterms = ["#PyConIndia2018","#PyConIndia","@pyconindia"]
+searchterms = ["#PyConIndia2018", "#PyConIndia", "@pyconindia"]
