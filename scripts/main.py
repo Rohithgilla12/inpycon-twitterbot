@@ -1,19 +1,13 @@
 """
-Main script file for execution of the bot
+Script for execution of the bot
 """
 import time  # for giving 15 seconds break between tweets
 import tweepy  # for twitter API
 from django.utils.encoding import smart_str
 
-
 # Twitter Access Tokens
 
-from config import consumer_key
-from config import consumer_secret
-from config import access_token
-from config import access_token_secret
-from config import searchterms
-from config import volunteertwitterhandle
+from config import *
 
 # Connecting to twitter service
 
@@ -45,8 +39,8 @@ while True:
                     pass
     for i in NAMES:
         try:
+        # Following the person who tweeted with #PyConIndia #PyConIndia2018
             API.create_friendship(i)
-            # Following the person who tweeted with #PyConIndia #PyConIndia2018
         except tweepy.TweepError:
             pass
     time.sleep(15)

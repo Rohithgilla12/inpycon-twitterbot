@@ -1,3 +1,6 @@
+"""
+Stores tokens and keys: imported by main.py
+"""
 consumer_key = "Your Consumer Key here"
 consumer_secret = "Your Consumer Secret here"
 access_token = "Your Access Token here"
