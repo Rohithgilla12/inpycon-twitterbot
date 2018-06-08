@@ -1,20 +1,16 @@
-# PyCon-Twitter-Bot
+# inpycon-twitterbot
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Pre-requisites 
-1. Twitter Account
-    
-2. Modules required
-    * tweepy
-    * time
-    * django.utils.encoding
-    
+A twitter bot made using Python and Twitter API to retweet posts using specific terms related to the conference and be beneficial to the social media campaign by keeping all tweets about PyCon India in one place and get the event trending. 
+It could be hastags, twitter handles, slang words. Anything. 
+
 ### Installation
 
 ```bash
-pip install requirements.txt  
+pip install requirements.txt 
 ```
+    
 
 ### Creating twitter api credentials
 
