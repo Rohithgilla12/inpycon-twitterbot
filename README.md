@@ -1,22 +1,27 @@
-# PyCon-Twitter-Bot
+# inpycon-twitterbot
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Pre-requisites 
-1. Twitter Account
-    
-2. Modules required
-    * tweepy
-    * time
-    * django.utils.encoding
-    
-### Installation
+A twitter bot made using Python and Twitter API to retweet posts using specific terms related to the conference and be beneficial to thea social media campaign by keeping all tweets about PyCon India in one place and get the event trending. 
+It could be hastags, twitter handles, slang words. Anything. 
 
-```bash
-pip install requirements.txt  
+## Setup and Running the bot
+
+### Install the Requirements 
+
+- Fork and clone this repository, 
+
+```
+git clone <Forked repository URL>
 ```
 
-### Creating twitter api credentials
+- Run the following command in your terminal, be sure to have [Python3](https://www.python.org/downloads/) already setup in your system.
+
+```bash
+pip3 install -r requirements.txt --user 
+```
+    
+### Creating Twitter API Credentials
 
 1. Go to the following [link](https://apps.twitter.com/ "Twitter App").
 2. Click the create app button
