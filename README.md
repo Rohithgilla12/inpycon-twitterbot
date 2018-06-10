@@ -1,41 +1,51 @@
-# PyCon-Twitter-Bot
+# inpycon-twitterbot
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Pre-requisites 
-1. Twitter Account
-    
-2. Modules required
-    * tweepy
-    * time
-    * django.utils.encoding
-    
-### Installation
+A twitter bot made using Python and Twitter API to retweet posts using specific terms related to the conference and be beneficial to thea social media campaign by keeping all tweets about PyCon India in one place and get the event trending. 
+It could be hastags, twitter handles, slang words. Anything. 
 
-```bash
-pip install requirements.txt  
+## Setup and Running the bot
+
+### Install the Requirements 
+
+- Fork and clone this repository, 
+
+```
+git clone <Forked repository URL>
 ```
 
-### Creating twitter api credentials
+- Run the following command in your terminal, be sure to have [Python3](https://www.python.org/downloads/) already setup in your system.
 
-1. Go to the following [link](https://apps.twitter.com/ "Twitter App").
-2. Click the create app button
-2. Fill the necessary details like :
-    * Name of the bot.
-    * Website name.
-    * Description.
-3. Goto Keys and tokens and generate your access tokens.
+```
+pip3 install -r requirements.txt --user 
+```
+    
+### Creating Twitter API Credentials
 
-
-### Using the tweepy api
-
-Authorise the app with tweepy api with consumer keys and access tokens.
-Now replace the credentials in the code with your credentials and search hashtags with
-the one which you wanted and enjoy the app up and running.
-
+1. Go to the [https://apps.twitter.com/](https://apps.twitter.com/)
+2. Click the `Create App` button
+2. Fill the necessary details for your application that you are creating
+    * Name of the bot
+    * Website name
+    * Description
+3. Once created, goto `Keys and Tokens` section and generate your access tokens.
 
 
-### Hosting in heroku
+### Configuring Tweepy API
+
+- For the bot to run, the Tweepy API needs to be authorised with Consumer keys, access tokens etc. These values are listed in [scripts/config.py](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/scripts/config.py) and needs to be filled before the execution of main.py script. 
+
+- Add hashtags, specific words, user handles in the searchterms list. Anything you want retweeted.
+
+### Running the Bot
+ 
+- Navigate to the scripts directory and run the bot using the following command
+```
+  python3 main.py
+```
+
+### Hosting on Heroku
 
 Use the following commands to host this app in heroku
 ```bash
@@ -46,5 +56,8 @@ git push heroku master
 heroku ps:scale worker=1
 heroku logs --tail
 ```
+###
 
-[![HitCount](http://hits.dwyl.io/Rohithgilla12/PyCon-Twitter-Bot.svg)](http://hits.dwyl.io/Rohithgilla12/PyCon-Twitter-Bot)
+## Contribution and Licence
+
+Refer to the [Contributing.md](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md) for the same. The source code is under [MIT License](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md). 
