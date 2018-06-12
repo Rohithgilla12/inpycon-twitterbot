@@ -56,8 +56,14 @@ git push heroku master
 heroku ps:scale worker=1
 heroku logs --tail
 ```
-###
-
+### Varible Explaination
+1. In [config.py](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/scripts/config.py) there are four keys which 
+    we need they are consumer_key, consumer_secret, access_token and access_token_secret these help in connecting to twiiter 
+    API.
+2. searchterms in [config.py](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/scripts/config.py) are the          target terms, the bot checks for those terms constantly, so for example we are searching for PyConIndia2018 so the terms in
+    the list are as follows ["#PyConIndia2018","PyConIndia","@pyconindia","#pyconindia"]
 ## Contribution and Licence
 
 Refer to the [Contributing.md](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md) for the same. The source code is under [MIT License](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md). 
+
+[![HitCount](http://hits.dwyl.io/Rohithgilla12/PyCon-Twitter-Bot.svg)](http://hits.dwyl.io/Rohithgilla12/PyCon-Twitter-Bot)
