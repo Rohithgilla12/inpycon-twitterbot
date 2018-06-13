@@ -61,6 +61,4 @@ heroku logs --tail
 ```
 ## Contribution and Licence
 
-Refer to the [Contributing.md](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md) for the same. The source code is under [MIT License](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md). 
-
-[![HitCount](http://hits.dwyl.io/Rohithgilla12/PyCon-Twitter-Bot.svg)](http://hits.dwyl.io/Rohithgilla12/PyCon-Twitter-Bot)
+Refer to the [Contributing.md](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md) for the same. The source code is under [MIT License](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md).
