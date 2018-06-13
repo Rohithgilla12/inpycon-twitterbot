@@ -30,13 +30,16 @@ pip3 install -r requirements.txt --user
     * Website name
     * Description
 3. Once created, goto `Keys and Tokens` section and generate your access tokens.
+4. Once located, move on to the next step for configuring [scripts/config.py](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/scripts/config.py)
 
 
 ### Configuring Tweepy API
 
-- For the bot to run, the Tweepy API needs to be authorised with Consumer keys, access tokens etc. These values are listed in [scripts/config.py](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/scripts/config.py) and needs to be filled before the execution of main.py script. 
+- For the bot to run, the Tweepy API needs to be authorised with `consumer_key`, `consumer_secret`, `access_token` and `access_token_secret`. These values are listed in [scripts/config.py](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/scripts/config.py) and needs to be filled before the execution of `main.py` script for connecting to the Twitter API
 
-- Add hashtags, specific words, user handles in the searchterms list. Anything you want retweeted.
+- `searchterms` in [config.py](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/scripts/config.py) are the      target terms, the bot checks for these terms constantly, so for example, if the user is searching for `PyConIndia2018`so the terms in the list are as follows ["#PyConIndia2018","PyConIndia","@pyconindia","#pyconindia"]
+ 
+- Add hashtags, specific words, user handles in the `searchterms`. Anything you want retweeted.
 
 ### Running the Bot
  
@@ -56,8 +59,6 @@ git push heroku master
 heroku ps:scale worker=1
 heroku logs --tail
 ```
-###
-
 ## Contribution and Licence
 
-Refer to the [Contributing.md](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md) for the same. The source code is under [MIT License](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md). 
+Refer to the [Contributing.md](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md) for the same. The source code is under [MIT License](https://github.com/Rohithgilla12/inpycon-twitterbot/blob/master/CONTRIBUTING.md).
